@@ -1,0 +1,23 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: fm-test-flag-new
+
+enabled: true
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: false
+
+conditions:
+  - anyOf:
+      - anyOf:
+          - group:
+              name: tg-1
+      - property:
+          name: userId
+          operator: in-array
+          operands:
+            - gregsID
+    flagValue: true

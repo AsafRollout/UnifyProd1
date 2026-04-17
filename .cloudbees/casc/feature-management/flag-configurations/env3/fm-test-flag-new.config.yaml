@@ -1,0 +1,17 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: fm-test-flag-new
+
+enabled: false
+
+stickinessProperty: rox.distinct_id
+
+defaultValue:
+  - percentage: 0
+    from: 2026-03-31T13:02:00Z
+  - percentage: 100
+    from: 2026-03-31T13:07:00Z
+
+conditions: []
