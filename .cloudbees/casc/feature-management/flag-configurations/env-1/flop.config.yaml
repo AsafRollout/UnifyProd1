@@ -1,0 +1,23 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag-configuration
+
+flag: flop
+
+enabled: false
+
+stickinessProperty: rox.distinct_id
+
+defaultValue: true
+
+conditions:
+  - allOf:
+      - anyOf:
+          - group:
+              name: tg11
+    flagValue: false
+  - allOf:
+      - property:
+          name: cp11
+          operator: is-undefined
+    flagValue: false
