@@ -4,7 +4,7 @@ kind: flag
 
 flag: flag with spaces
 flagType: boolean
-description: "abc"
+description: "abc123"
 labels:
 
 availableValues:
