@@ -4,7 +4,7 @@ kind: flag
 
 flag: flag / or not
 flagType: boolean
-description: asdf
+description: zxcvzxcv
 labels:
 
 availableValues:
