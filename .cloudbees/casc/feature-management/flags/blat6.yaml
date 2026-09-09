@@ -4,7 +4,7 @@ kind: flag
 
 flag: blat6
 flagType: boolean
-description: "qwerqwer"
+description: "12345678"
 labels:
 
 availableValues:
