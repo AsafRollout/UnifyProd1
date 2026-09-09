@@ -1,0 +1,13 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: t/g
+
+description: 
+
+conditions:
+  allOf:
+    - property:
+        name: rox.screen_width
+        operator: is-undefined
